@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Daana Paani — "Grain & Water" design tokens
+   Warm editorial: cream paper, warm ink, deep forest, marigold
+   ============================================================ */
+@theme {
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+
+  --color-ink: #191610;
+  --color-ink-soft: #4b453a;
+  --color-ink-mute: #6f6759;
+
+  --color-paper: #fbf7f0;
+  --color-paper-2: #f4ecdd;
+  --color-paper-3: #ebe0cc;
+
+  --color-forest-50: #f0f5ef;
+  --color-forest-100: #dbe9d7;
+  --color-forest-200: #b8d3b2;
+  --color-forest-300: #8eb886;
+  --color-forest-400: #60975c;
+  --color-forest-500: #417c43;
+  --color-forest-600: #2f6234;
+  --color-forest-700: #254e2b;
+  --color-forest-800: #1d3d23;
+  --color-forest-900: #152d1a;
+  --color-forest-950: #0a190e;
+
+  --color-marigold-50: #fef6e7;
+  --color-marigold-100: #fce8c2;
+  --color-marigold-200: #f8d189;
+  --color-marigold-300: #f3b854;
+  --color-marigold-400: #eda42e;
+  --color-marigold-500: #dd8a17;
+  --color-marigold-600: #975110;
+  --color-marigold-700: #7d420c;
+
+  --text-display: clamp(2.6rem, 6.4vw, 5.25rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.025em;
+  --text-h1: clamp(2.1rem, 4.6vw, 3.5rem);
+  --text-h1--line-height: 1.06;
+  --text-h1--letter-spacing: -0.02em;
+  --text-h2: clamp(1.75rem, 3.4vw, 2.6rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.015em;
+  --text-h3: clamp(1.35rem, 2.2vw, 1.8rem);
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.01em;
+  --text-lead: clamp(1.075rem, 1.5vw, 1.3rem);
+  --text-lead--line-height: 1.6;
+
+  --radius-4xl: 2rem;
+  --radius-5xl: 2.75rem;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-marigold-300);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-forest-600);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+/* ---------- Marquee ---------- */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee var(--marquee-duration, 34s) linear infinite;
+}
+
+/* ---------- FAQ (grid-rows collapse, animatable) ---------- */
+.faq-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s var(--ease-out-expo);
+}
+
+.faq-panel[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.faq-panel > div {
+  overflow: hidden;
+}
+
+/* ---------- Gentle ambient motion ---------- */
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-ring {
+  animation: pulse-ring 2.4s var(--ease-out-expo) infinite;
+}
+
+/* ---------- Subtle paper grain for premium depth ---------- */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
