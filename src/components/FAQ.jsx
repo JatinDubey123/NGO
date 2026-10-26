@@ -1,5 +1,5 @@
 import { useId, useState } from 'react'
-import { faqs } from '../data/content'
+import { faqs, site } from '../data/content'
 import { Container, Eyebrow, Icon, Reveal } from './ui'
 
 export default function FAQ() {
@@ -19,10 +19,10 @@ export default function FAQ() {
             you.
           </p>
           <a
-            href="mailto:hello@danapaani.org"
+            href={`mailto:${site.email}`}
             className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-forest-700 hover:text-forest-900"
           >
-            hello@danapaani.org
+            {site.email}
             <Icon name="arrow-up-right" className="h-4 w-4" />
           </a>
         </Reveal>

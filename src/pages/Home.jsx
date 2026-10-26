@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Marquee tone="marigold" text="Grain & water for every table" duration={30} />
+      <Marquee tone="marigold" text="Nourishment for every table" duration={30} />
       <ImpactBand />
       <ProgramsPreview tone="paper" limit={4} />
       <JourneySection tone="paper2" />

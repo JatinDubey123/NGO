@@ -32,7 +32,7 @@ export default function About() {
       <PageHero
         eyebrow="About us"
         title="Compassion, turned into action"
-        lead="At Daana Paani we unite compassion with action — creating real change, one meal, one life at a time."
+        lead="At Jivan Aahar we unite compassion with action — creating real change, one meal, one life at a time."
       >
         <div className="flex flex-wrap gap-3">
           <Button to="/get-involved" variant="accent" icon="arrow-right">
@@ -54,8 +54,8 @@ export default function About() {
             <div className="mt-6 space-y-4 text-lead text-ink-soft">
               <p>
                 In 2020, a small group of volunteers in Nagpur began cooking and sharing meals with
-                neighbours who had gone without. That single kitchen became Daana Paani — literally
-                &ldquo;grain and water&rdquo;, the old promise that everyone eats, together.
+                neighbours who had gone without. That single kitchen became Jivan Aahar — literally
+                &ldquo;food for life&rdquo;, the old promise that everyone eats, together.
               </p>
               <p>
                 From there our work grew: school kits for children, health camps for families,
@@ -84,7 +84,7 @@ export default function About() {
               <div className="overflow-hidden rounded-5xl">
                 <img
                   src="/assets/Team-BDOzWGe7.jpg"
-                  alt="The Daana Paani team in the field"
+                  alt="The Jivan Aahar team in the field"
                   loading="lazy"
                   className="aspect-[4/5] w-full object-cover"
                 />

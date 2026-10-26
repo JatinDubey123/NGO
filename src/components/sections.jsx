@@ -12,7 +12,7 @@ import {
   waysToGive,
 } from '../data/content'
 import { usePrefersReducedMotion } from '../hooks'
-import { Badge, Button, Container, Eyebrow, Icon, Reveal, Section, StatBlock } from './ui'
+import { Button, Container, Eyebrow, Icon, Reveal, Section, StatBlock } from './ui'
 
 /* ================================================================ Hero */
 
@@ -50,21 +50,13 @@ export function Hero() {
 
       <Container className="relative z-10 pt-32 pb-12 sm:pb-16">
         <div className="max-w-4xl">
-          <Badge className="border-paper/20 bg-paper/10 text-paper">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ring absolute inline-flex h-full w-full rounded-full bg-marigold-300" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-marigold-300" />
-            </span>
-            Nagpur · Since 2020
-          </Badge>
-
-          <h1 className="font-display mt-6 text-display font-semibold text-paper">
+          <h1 className="font-display text-display font-semibold text-paper">
             Hunger ends where <span className="text-marigold-300">sharing</span> begins.
           </h1>
 
           <p className="text-lead mt-6 max-w-2xl text-paper/80">
-            Daana Paani means grain and water — the simple promise that no one should go without.
-            Since 2020 we have served meals, ration kits and care across twelve cities.
+            Jivan Aahar means nourishment for life — the simple promise that no one should go
+            without. Since 2020 we have served meals, ration kits and care across twelve cities.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">

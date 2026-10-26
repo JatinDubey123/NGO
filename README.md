@@ -1,6 +1,6 @@
-# Daana Paani Foundation — React Clone
+# Jivan Aahar Foundation
 
-A React.js clone of [daanapaanifoundation.com](https://daanapaanifoundation.com/).
+Official website for **Jivan Aahar Foundation** — fighting hunger and restoring dignity through every meal served.
 
 ## Stack
 
@@ -29,7 +29,7 @@ Then open the URL shown in the terminal (usually `http://localhost:5173`).
 
 ## Design system
 
-The visual language is "Grain & Water" — warm cream paper, warm ink, deep forest green and a
+The visual language uses warm cream paper, warm ink, deep forest green and a
 marigold accent, with Fraunces for display type and Instrument Sans for UI/body.
 
 Design tokens (colour ramps, fluid type scale, radii, motion easings) live in `src/index.css`

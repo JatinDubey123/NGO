@@ -7,7 +7,7 @@ const TONES = {
 }
 
 export default function Marquee({
-  text = 'Grain & water for every table',
+  text = 'Nourishment for every table',
   reverse = false,
   tone = 'paper',
   duration = 34,

@@ -1,5 +1,5 @@
 // ============================================================
-// Daana Paani Foundation — site content
+// Jivan Aahar Foundation — site content
 //
 // NOTE ON NUMBERS & QUOTES
 // Values marked "PLACEHOLDER" are illustrative stand-ins that need
@@ -8,12 +8,12 @@
 // ============================================================
 
 export const site = {
-  name: 'Daana Paani Foundation',
-  shortName: 'Daana Paani',
-  tagline: 'Grain & water for every table',
+  name: 'Jivan Aahar Foundation',
+  shortName: 'Jivan Aahar',
+  tagline: 'Nourishment for every table',
   description:
-    'Daana Paani Foundation fights hunger and restores dignity — one shared meal, one child, one community at a time.',
-  email: 'hello@danapaani.org',
+    'Jivan Aahar Foundation fights hunger and restores dignity — one shared meal, one child, one community at a time.',
+  email: 'hello@jivanaahar.org',
   phone: '+91 93993 45989',
   phoneHref: 'tel:+919399345989',
   address: {
@@ -144,8 +144,7 @@ export const programs = [
     text: 'Community schools, learning kits and scholarships that keep underprivileged children in the classroom and dreaming bigger.',
     outcomes: ['School kits & uniforms', 'Scholarships', 'After-school tutoring'],
     stat: { to: 800, suffix: '+', label: 'children supported' },
-    image:
-      'https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=1200&auto=format&fit=crop',
+    image: '/assets/education.jpg',
     imageAlt: 'Children reading together at a learning camp',
   },
   {
@@ -155,8 +154,7 @@ export const programs = [
     text: 'Medical camps, health awareness drives and free consultations for families in rural and underserved areas.',
     outcomes: ['Free health camps', 'Immunisation drives', 'Blood donation camps'],
     stat: { to: 40, suffix: '+', label: 'health camps held' },
-    image:
-      'https://thecsrjournal.in/wp-content/uploads/2024/04/SNEHA-NGO-organizes-immunisation-camps-in-Mumbai-slums-to-raise-awareness.jpg',
+    image: '/assets/healthcare.jpg',
     imageAlt: 'A community health and immunisation camp',
   },
   {
@@ -166,7 +164,7 @@ export const programs = [
     text: 'Training programs and self-help groups that give women skills, income and financial independence.',
     outcomes: ['Vocational training', 'Self-help groups', 'Micro-enterprise support'],
     stat: { to: 300, suffix: '+', label: 'women trained' },
-    image: 'https://3.imimg.com/data3/FF/PB/MY-5047481/capture-500x500.jpg',
+    image: '/assets/women-empowerment.jpg',
     imageAlt: 'Women at a skills training session',
   },
   {
@@ -176,8 +174,7 @@ export const programs = [
     text: 'Tree plantation, clean energy and plastic-free campaigns that protect the places our communities call home.',
     outcomes: ['Tree plantation', 'Clean-up drives', 'Plastic-free campaigns'],
     stat: { to: 5000, suffix: '+', label: 'saplings planted' },
-    image:
-      'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1200&auto=format&fit=crop',
+    image: '/assets/environment.jpg',
     imageAlt: 'Volunteers planting saplings together',
   },
   {
@@ -187,8 +184,7 @@ export const programs = [
     text: 'Shelter, nutrition and education for orphans and abandoned children, so every child has somewhere to grow.',
     outcomes: ['Nutrition support', 'Shelter assistance', 'Mentorship & care'],
     stat: { to: 150, suffix: '+', label: 'children cared for' },
-    image:
-      'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop',
+    image: '/assets/child-welfare.jpg',
     imageAlt: 'Children at a community care centre',
   },
 ]
@@ -210,7 +206,7 @@ export const timeline = [
   {
     year: '2020',
     title: 'A single kitchen',
-    text: 'Daana Paani begins as a handful of volunteers cooking and sharing meals in Nagpur.',
+    text: 'Jivan Aahar begins as a handful of volunteers cooking and sharing meals in Nagpur.',
   },
   {
     year: '2021',
@@ -235,55 +231,49 @@ export const galleryItems = [
     title: 'Slum Food Distribution Drive',
     description: 'Hot meals served to over 300 people in a single afternoon.',
     category: 'Hunger Relief',
-    image:
-      'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1170&auto=format&fit=crop',
+    image: '/assets/child-welfare.jpg',
   },
   {
     id: 2,
     title: 'Health Support for the Underprivileged',
     description: 'Free consultations and immunisation at a community health camp.',
     category: 'Healthcare',
-    image:
-      'https://thecsrjournal.in/wp-content/uploads/2024/04/SNEHA-NGO-organizes-immunisation-camps-in-Mumbai-slums-to-raise-awareness.jpg',
+    image: '/assets/healthcare.jpg',
   },
   {
     id: 3,
     title: 'Empowering Women Through Ration Kits',
     description: 'Ration kits delivered with dignity to women-led households.',
     category: 'Women',
-    image: 'https://3.imimg.com/data3/FF/PB/MY-5047481/capture-500x500.jpg',
+    image: '/assets/women-empowerment.jpg',
   },
   {
     id: 4,
     title: 'Winter Blanket Distribution',
     description: 'Warm blankets for families through the coldest nights of the year.',
     category: 'Hunger Relief',
-    image:
-      'https://static.wixstatic.com/media/d5fc3f_e2ef1f5c27bf4572ab409e4e5a45845b.jpg/v1/fill/w_930,h_419,al_c,q_85,enc_avif,quality_auto/d5fc3f_e2ef1f5c27bf4572ab409e4e5a45845b.jpg',
+    image: '/assets/winter-blanket.jpg',
   },
   {
     id: 5,
     title: 'School Kit Distribution',
     description: 'Books, bags and uniforms handed to children starting a new term.',
     category: 'Education',
-    image:
-      'https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=800&auto=format&fit=crop',
+    image: '/assets/education.jpg',
   },
   {
     id: 6,
     title: 'Blood Donation Camp',
     description: 'Volunteers and donors coming together to save lives.',
     category: 'Healthcare',
-    image:
-      'https://images.unsplash.com/photo-1615461066159-fea0960485d5?q=80&w=800&auto=format&fit=crop',
+    image: '/assets/blood-donation.jpg',
   },
   {
     id: 7,
     title: 'Community Hygiene Awareness',
     description: 'Clean habits for healthy lives, taught door to door.',
     category: 'Healthcare',
-    image:
-      'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1000&auto=format&fit=crop',
+    image: '/assets/environment.jpg',
   },
   {
     id: 8,
@@ -338,8 +328,7 @@ export const stories = [
     name: 'Rahul K.',
     role: 'School student, 12',
     place: 'Nagpur',
-    image:
-      'https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=800&auto=format&fit=crop',
+    image: '/assets/education.jpg',
   },
   {
     quote:
@@ -347,7 +336,7 @@ export const stories = [
     name: 'Meena P.',
     role: 'Tailor & group leader',
     place: 'Nagpur',
-    image: 'https://3.imimg.com/data3/FF/PB/MY-5047481/capture-500x500.jpg',
+    image: '/assets/women-empowerment.jpg',
   },
 ]
 
@@ -401,7 +390,7 @@ export const faqs = [
     a: 'Every donation is acknowledged with a receipt. For specific documentation needs, write to us and our team will help.',
   },
   {
-    q: 'Where does Daana Paani work?',
+    q: 'Where does Jivan Aahar work?',
     a: 'We started in Nagpur, Maharashtra, and now run drives across twelve cities — partnering with local volunteers wherever the need is greatest.',
   },
 ]

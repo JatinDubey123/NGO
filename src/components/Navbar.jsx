@@ -12,7 +12,7 @@ function Logo({ light }) {
       aria-label={`${site.name} — home`}
     >
       <span className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-full ring-1 ring-black/5 sm:h-12 sm:w-12">
-        <img src="/assets/Logo-_FRaYa50.png" alt="" className="h-full w-full object-cover" />
+        <img src="/assets/logo.svg" alt="" className="h-full w-full object-cover" />
       </span>
       <span className="leading-none">
         <span
@@ -20,7 +20,7 @@ function Logo({ light }) {
             light ? 'text-paper' : 'text-ink'
           }`}
         >
-          Daana Paani
+          Jivan Aahar
         </span>
         <span
           className={`block text-[0.62rem] font-semibold uppercase tracking-[0.22em] transition-colors ${

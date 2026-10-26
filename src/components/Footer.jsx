@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <span className="grid h-12 w-12 place-items-center overflow-hidden rounded-full ring-1 ring-paper/15">
                 <img
-                  src="/assets/Logo-_FRaYa50.png"
+                  src="/assets/logo.svg"
                   alt=""
                   className="h-full w-full object-cover"
                 />
@@ -27,7 +27,7 @@ export default function Footer() {
               <span className="font-display text-xl font-semibold">{site.name}</span>
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-paper/70">
-              Daana Paani is dedicated to fighting hunger and restoring dignity through every meal
+              Jivan Aahar is dedicated to fighting hunger and restoring dignity through every meal
               served. With compassion at our core, we believe access to food is a basic human right —
               not a privilege.
             </p>
